@@ -5,18 +5,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 /**
  * Created by Mikhail on 4/11/16.
  */
 public class CustomList extends ArrayAdapter<String> {
-
-    TextView text_view_name;
-    TextView text_view_dob;
-    TextView text_view_oscars;
-
+    
     private final Activity context;
     private final String[] actorsNames;
     private final String[] actorsDOB;
@@ -46,7 +41,7 @@ public class CustomList extends ArrayAdapter<String> {
         TextView text_view_oscars = (TextView) rowView.findViewById(R.id.text_view_oscars);
         text_view_oscars.setText(oscarsWon[position]);
 
-
+        return rowView;
     }
 }
 
