@@ -42,6 +42,10 @@ public class CustomList extends ArrayAdapter<String> {
         text_view_oscars.setText(oscarsWon[position]);
 
         return rowView;
+<<<<<<< HEAD
+=======
+
+>>>>>>> c221bfedde90c77631d5ee8040c78440d394a952
     }
 }
 

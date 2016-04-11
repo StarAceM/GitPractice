@@ -10,7 +10,7 @@ public class MainActivity extends AppCompatActivity {
     ListView list_view_actor;
 
     String[] actorsNames = {"Name: Leo DiCaprio", "Name: Jeniffer Lawrence", "Matt Damon"};
-    private final String[] actorsDOB = {"DOB: November 11, 1974", " August 15, 1990", "October 8, 1970"};
+    private final String[] actorsDOB = {"DOB: November 11, 1974", "August 15, 1990", "October 8, 1970"};
     private final String[] oscarsWon = {"Oscars Won: 1", "Oscars Won: 1", "Oscars Won: 1"};
 
 
