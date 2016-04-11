@@ -46,6 +46,7 @@ public class CustomList extends ArrayAdapter<String> {
         TextView text_view_oscars = (TextView) rowView.findViewById(R.id.text_view_oscars);
         text_view_oscars.setText(oscarsWon[position]);
 
+        return rowView;
 
     }
 }
