@@ -36,18 +36,15 @@ public class CustomList extends ArrayAdapter<String> {
     public View getView(int position, View view, ViewGroup parent) {
         LayoutInflater inflater = context.getLayoutInflater();
         View rowView = inflater.inflate(R.layout.list_view_actor_internal, null, true);
-        TextView txt1 = (TextView) rowView.findViewById(R.id.text_view_name);
-        txt1.setText(actorsNames.toString());
+        TextView text_view_name = (TextView) rowView.findViewById(R.id.text_view_name);
+        text_view_name.setText(actorsNames[position]);
 
-        TextView txt2 = (TextView) rowView.findViewById(R.id.text_view_dob);
-        txt1.setText(actorsDOB.toString());
-
-
-        TextView txt3 = (TextView) rowView.findViewById(R.id.text_view_oscars);
-        txt1.setText(oscarsWon.toString());
+        TextView text_view_dob = (TextView) rowView.findViewById(R.id.text_view_dob);
+        text_view_dob.setText(actorsDOB[position]);
 
 
-
+        TextView text_view_oscars = (TextView) rowView.findViewById(R.id.text_view_oscars);
+        text_view_oscars.setText(oscarsWon[position]);
 
 
     }
