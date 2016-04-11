@@ -13,14 +13,14 @@ import android.widget.TextView;
 public class CustomList extends ArrayAdapter<String> {
     
     private final Activity context;
-    private final String[] actorsNames;
+    private final String[] actorsNamesArray;
     private final String[] actorsDOB;
     private final String[] oscarsWon;
 
     public CustomList(Activity context, String[] actorsNames, String[] actorsDOB, String[] oscarsWon) {
         super(context, R.layout.list_view_actor_internal, actorsNames);
         this.context = context;
-        this.actorsNames = actorsNames;
+        this.actorsNamesArray = actorsNames;
         this.actorsDOB = actorsDOB;
         this.oscarsWon = oscarsWon;
 
@@ -32,7 +32,7 @@ public class CustomList extends ArrayAdapter<String> {
         LayoutInflater inflater = context.getLayoutInflater();
         View rowView = inflater.inflate(R.layout.list_view_actor_internal, null, true);
         TextView text_view_name = (TextView) rowView.findViewById(R.id.text_view_name);
-        text_view_name.setText(actorsNames[position]);
+        text_view_name.setText(actorsNamesArray[position]);
 
         TextView text_view_dob = (TextView) rowView.findViewById(R.id.text_view_dob);
         text_view_dob.setText(actorsDOB[position]);
